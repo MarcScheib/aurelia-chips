@@ -7,12 +7,11 @@ const webpack = require('webpack');
 
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
-const pluginDir = path.resolve(__dirname, '../src');
 
 module.exports = {
   resolve: {
     extensions: ['.ts', '.js'],
-    modules: [srcDir, nodeModulesDir, pluginDir]
+    modules: [srcDir, nodeModulesDir]
   },
   entry: {
     app: ['aurelia-bootstrapper']
@@ -42,7 +41,6 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: 'index.html'
-    }),
-    // new webpack.optimize.UglifyJsPlugin()
+    })
   ]
 };

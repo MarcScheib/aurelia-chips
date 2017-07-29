@@ -1,5 +1,5 @@
-import { Aurelia } from 'aurelia-framework';
-import { PLATFORM } from 'aurelia-pal';
+import {Aurelia} from 'aurelia-framework';
+import {PLATFORM} from 'aurelia-pal';
 
 export async function configure(aurelia: Aurelia) {
   aurelia.use
