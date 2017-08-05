@@ -21,7 +21,11 @@ System.register(["aurelia-pal"], function (exports_1, context_1) {
                 }
                 ChipsConfiguration.prototype.apply = function () {
                     var _this = this;
-                    this.resources.forEach(function (resourceName) { return _this.frameworkConfig.globalResources(resources[resourceName]); });
+                    this.resources.forEach(function (resourceName) {
+                        console.log(resourceName);
+                        console.log(resources[resourceName]);
+                        _this.frameworkConfig.globalResources(resources[resourceName]);
+                    });
                 };
                 ChipsConfiguration.prototype.useDefaults = function () {
                     return this.useStandardResources();

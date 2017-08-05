@@ -11,7 +11,11 @@ const nodeModulesDir = path.resolve(__dirname, 'node_modules');
 module.exports = {
   resolve: {
     extensions: ['.ts', '.js'],
-    modules: [srcDir, nodeModulesDir]
+    modules: [srcDir, nodeModulesDir],
+    alias: {
+      'aurelia-chips': path.resolve('../src'),
+      'aurelia-chips$': path.resolve('../src/index.ts'),
+    }
   },
   entry: {
     app: ['aurelia-bootstrapper']

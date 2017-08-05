@@ -10,7 +10,7 @@ var AuChips = (function () {
     }
     AuChips = __decorate([
         customElement('au-chips'),
-        inlineView("\n  <template>\n    <h1>test</h1>\n    <slot></slot>\n  </template>\n")
+        inlineView("\n  <template>\n    <slot></slot>\n  </template>\n")
     ], AuChips);
     return AuChips;
 }());

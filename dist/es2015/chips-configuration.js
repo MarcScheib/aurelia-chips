@@ -9,7 +9,11 @@ export class ChipsConfiguration {
         applySetter(() => this.apply());
     }
     apply() {
-        this.resources.forEach(resourceName => this.frameworkConfig.globalResources(resources[resourceName]));
+        this.resources.forEach(resourceName => {
+            console.log(resourceName);
+            console.log(resources[resourceName]);
+            this.frameworkConfig.globalResources(resources[resourceName]);
+        });
     }
     useDefaults() {
         return this.useStandardResources();

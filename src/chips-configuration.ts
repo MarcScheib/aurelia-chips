@@ -16,8 +16,6 @@ export class ChipsConfiguration {
 
   private apply() {
     this.resources.forEach(resourceName => {
-      console.log(resourceName);
-      console.log(resources[resourceName]);
       this.frameworkConfig.globalResources(resources[resourceName])
     });
   }

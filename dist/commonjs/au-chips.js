@@ -12,7 +12,7 @@ var AuChips = (function () {
     }
     AuChips = __decorate([
         aurelia_templating_1.customElement('au-chips'),
-        aurelia_templating_1.inlineView("\n  <template>\n    <h1>test</h1>\n    <slot></slot>\n  </template>\n")
+        aurelia_templating_1.inlineView("\n  <template>\n    <slot></slot>\n  </template>\n")
     ], AuChips);
     return AuChips;
 }());

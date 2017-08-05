@@ -13,7 +13,11 @@ define(["require", "exports", "aurelia-pal"], function (require, exports, aureli
         }
         ChipsConfiguration.prototype.apply = function () {
             var _this = this;
-            this.resources.forEach(function (resourceName) { return _this.frameworkConfig.globalResources(resources[resourceName]); });
+            this.resources.forEach(function (resourceName) {
+                console.log(resourceName);
+                console.log(resources[resourceName]);
+                _this.frameworkConfig.globalResources(resources[resourceName]);
+            });
         };
         ChipsConfiguration.prototype.useDefaults = function () {
             return this.useStandardResources();

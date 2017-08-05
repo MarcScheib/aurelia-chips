@@ -11,7 +11,6 @@ AuChips = __decorate([
     customElement('au-chips'),
     inlineView(`
   <template>
-    <h1>test</h1>
     <slot></slot>
   </template>
 `)

@@ -16,8 +16,8 @@
   },
   "license": "MIT",
   "author": "Marc Scheib <marc.scheib@cycrilab.com>",
-  "main": "dist/commonjs/aurelia-chips.js",
-  "typings": "dist/commonjs/aurelia-chips.d.ts",
+  "main": "dist/commonjs/index.js",
+  "typings": "dist/commonjs/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/MarcScheib/aurelia-chips"
